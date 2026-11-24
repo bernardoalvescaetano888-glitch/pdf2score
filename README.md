@@ -17,8 +17,8 @@ Aplicativo desktop (Tkinter) que converte partituras em PDF para **MusicXML** ( 
 ## Pré-requisitos
 
 - **Python 3.10+** (apenas para rodar do código-fonte; o `.exe` não precisa).
-- **Java 17+** — necessário para o Audiveris.
-- **Audiveris 5.x** — detectado automaticamente no PATH ou instalado pelo app.
+- **Java 17+** — necessário apenas para versões antigas do Audiveris em ZIP; a partir da 5.11 o pacote Windows já traz o runtime embutido.
+- **Audiveris 5.x** — detectado automaticamente no PATH ou instalado pelo app (a partir da 5.11 ele baixa o MSI e extrai `Audiveris.exe`).
 - **MuseScore 4** — necessário apenas para gerar MP3 e abrir a partitura.
 
 Não há dependências Python externas: `tkinter`, `json`, `subprocess` e `threading` são da biblioteca padrão.

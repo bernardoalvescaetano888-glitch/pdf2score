@@ -17,6 +17,8 @@ AUDIVERIS_CANDIDATES = (
     r"C:\Program Files\Audiveris\audiveris.bat",
     r"C:\Program Files (x86)\Audiveris\audiveris.bat",
     r"C:\Program Files\Audiveris\bin\audiveris.bat",
+    r"C:\Program Files\Audiveris\Audiveris.exe",
+    r"C:\Program Files (x86)\Audiveris\Audiveris.exe",
     r"C:\Audiveris\audiveris.bat",
 )
 
@@ -43,7 +45,13 @@ def _from_env(name: str) -> str:
         return ""
     p = Path(raw)
     if p.is_dir():
-        for filename in ("audiveris.bat", "audiveris", "mscore.exe", "musescore.exe"):
+        for filename in (
+            "audiveris.bat",
+            "audiveris",
+            "Audiveris.exe",
+            "mscore.exe",
+            "musescore.exe",
+        ):
             child = p / filename
             if child.is_file():
                 return str(child)
