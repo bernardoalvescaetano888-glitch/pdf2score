@@ -1,0 +1,7 @@
+# Nenhuma dependência Python é necessária: tkinter, json, subprocess e threading
+# fazem parte da biblioteca padrão.
+#
+# É necessário instalar separadamente:
+#   - Java (JRE 17+) e Audiveris  -> https://audiveris.github.io/audiveris/
+#   - MuseScore 4                 -> https://musescore.org/
+#   - ffmpeg (apenas se quiser gerar MP3 por outra via que não o MuseScore)
