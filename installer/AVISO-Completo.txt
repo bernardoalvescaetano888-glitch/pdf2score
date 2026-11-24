@@ -1,0 +1,17 @@
+LEIA ANTES DE USAR
+==================
+
+Esta é a versão COMPLETA do instalador do Pdf2Score. Ela verifica e instala
+automaticamente as dependências que estiverem faltando:
+
+  - Java 17 (Eclipse Temurin)
+  - MuseScore Studio 4
+
+Os arquivos são baixados dos sites oficiais durante a instalação, portanto
+é necessária conexão com a internet. O Audiveris continua sendo instalado
+pelo próprio aplicativo (aba Configuracoes > "Instalar Audiveris agora").
+
+Atenção: o Pdf2Score.exe incluído foi compilado para WINDOWS ARM64.
+Em Windows x64 ele pode não executar.
+
+Mais informações: https://github.com/bernardoalvescaetano888-glitch/pdf2score

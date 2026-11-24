@@ -49,8 +49,12 @@ Para gerar o instalador (necessário ter o Inno Setup 6 instalado):
 build_setup.bat
 ```
 
-O instalador fica em `setup\Pdf2Score-Setup-1.0.0-arm64.exe`. Instale o Inno Setup com
-`winget install --id JRSoftware.InnoSetup --exact` caso não esteja presente.
+São gerados dois instaladores em `setup\`:
+
+- `Pdf2Score-Setup-1.0.0-arm64.exe` — instala apenas o aplicativo
+- `Pdf2Score-Setup-Completo-1.0.0-arm64.exe` — baixa e instala também **Java 17** e **MuseScore 4** caso não estejam presentes (usa as páginas de download do Inno Setup e `msiexec /qn`)
+
+Instale o Inno Setup com `winget install --id JRSoftware.InnoSetup --exact` caso não esteja presente.
 
 > O setup avisa quando a arquitetura do Windows for diferente da do executável
 > ( ARM64 ) e exibe um lembrete sobre Java e MuseScore ao final da instalação.

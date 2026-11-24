@@ -18,8 +18,10 @@ if not defined ISCC (
   exit /b 1
 )
 
-echo Compilando instalador com: %ISCC%
+echo Compilando instaladores com: %ISCC%
 "%ISCC%" "installer\Pdf2Score.iss"
+if errorlevel 1 exit /b 1
+"%ISCC%" "installer\Pdf2Score-Completo.iss"
 if errorlevel 1 exit /b 1
 
 echo.
