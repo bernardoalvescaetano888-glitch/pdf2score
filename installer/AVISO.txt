@@ -1,0 +1,24 @@
+LEIA ANTES DE USAR
+==================
+
+Este instalador contém o Pdf2Score.exe compilado para WINDOWS ARM64.
+
+- Em um Windows ARM64: funciona normalmente.
+- Em um Windows x64: o aplicativo pode não iniciar. Nesse caso, rode do
+  código-fonte com um Python x64 e recompile com "python build_exe.py".
+
+Dependências externas (não inclusas neste instalador):
+
+1. Java 17 ou superior - necessário para o Audiveris.
+   https://adoptium.net/
+
+2. Audiveris 5.x - pode ser instalado automaticamente pelo próprio app:
+   aba Configuracoes > "Instalar Audiveris agora".
+
+3. MuseScore 4 - necessário para gerar MP3 e abrir a partitura.
+   https://musescore.org/
+
+Uso: abra o Pdf2Score, escolha o PDF e a pasta de destino na aba
+"Converter", marque as saidas desejadas e clique em "Converter".
+
+Mais informações: https://github.com/bernardoalvescaetano888-glitch/pdf2score

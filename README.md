@@ -43,6 +43,18 @@ python build_exe.py
 
 O arquivo fica em `dist\Pdf2Score.exe`.
 
+Para gerar o instalador (necessário ter o Inno Setup 6 instalado):
+
+```bat
+build_setup.bat
+```
+
+O instalador fica em `setup\Pdf2Score-Setup-1.0.0-arm64.exe`. Instale o Inno Setup com
+`winget install --id JRSoftware.InnoSetup --exact` caso não esteja presente.
+
+> O setup avisa quando a arquitetura do Windows for diferente da do executável
+> ( ARM64 ) e exibe um lembrete sobre Java e MuseScore ao final da instalação.
+
 ## Como funciona
 
 ```
